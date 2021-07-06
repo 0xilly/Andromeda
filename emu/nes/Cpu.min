@@ -1,0 +1,23 @@
+pkg nes
+
+struct Flags {
+  Carry:      bool
+  Zero:       bool
+  Interrupt:  bool
+  Decimal:    bool
+  Break:      bool
+  Unused:     bool
+  Overflow:   bool
+  Negative:   bool
+}
+
+struct Cpu {
+  PC:           u16
+  SP:           u8
+  A:            u8
+  X:            u8
+  Y:            u8
+  flags:        Flags
+  total_cycles: usize
+  cycles:       u8
+}

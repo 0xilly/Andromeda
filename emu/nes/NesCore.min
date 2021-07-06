@@ -1,0 +1,18 @@
+pkg nes
+
+use emu/EmuBase
+
+ex class NesCore : BaseCore("Nintendo Entertainent System") {
+
+  override ex def start():void -> {
+
+  }
+
+  override ex def stop():void -> {
+
+  }
+
+  override ex def reset():void -> {
+
+  }
+}

@@ -1,0 +1,13 @@
+pkg emu
+
+ex class BaseCore(name:string) {
+
+  ex def getName():string -> name
+
+  ex def start():void
+
+  ex def stop():void
+
+  ex def reset():void
+
+}
